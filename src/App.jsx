@@ -1,10 +1,19 @@
-//import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/home';
+import Container from './components/container';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
+
   return (
     <div>
-      <Home />
+      <AnimatePresence>
+        <Routes location={location} key={location.key}>
+          <Route path="/" element={<Home />} />
+          <Route path="/container" element={<Container />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
