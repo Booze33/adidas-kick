@@ -1,13 +1,22 @@
 import { CgAdidas } from 'react-icons/cg';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { BsFillBagCheckFill } from 'react-icons/bs';
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { IoPersonOutline } from "react-icons/io5";
 
 const Nav = () => {
   return (
-    <nav>
+    <header className="nav-con">
       <CgAdidas />
-      <BsFillBagCheckFill />
-    </nav>
+      <nav>
+        <a>X-Collection</a>
+        <a>Predator</a>
+        <a>Copa</a>
+      </nav>
+      <div>
+        <IoPersonOutline />
+        <MdOutlineShoppingBag />
+      </div>
+    </header>
   )
 }
 
