@@ -22,7 +22,7 @@
   font-style: normal;
   color: #fff;
   position: relative;
-  bottom: 11rem;
+  bottom: 8.5rem;
   left: 2rem;
   font-size: 4rem;
   letter-spacing: 7px;
@@ -36,6 +36,7 @@
 
 .scroll-btn {
   position: relative;
+  display: flex;
   bottom: 9rem;
   font-size: 1.5rem;
   color: #fff;
@@ -46,6 +47,10 @@
   padding: 0.3rem;
   border-radius: 25px;
   font-family: 'Poppins', sans-serif;
+}
+
+.scroll {
+  margin: 0.5rem;
 }
 
 .scroll-btn:hover{

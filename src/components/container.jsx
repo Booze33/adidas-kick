@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Nav from './nav.jsx';
 import '../assets/styles/container.css';
@@ -30,9 +30,6 @@ const Container = () => {
     animate='visible'
     exit='exit'>
       <Nav />
-      <div>
-        <Link to="/">Home</Link>
-      </div>
     </motion.nav>
   );
 }
