@@ -9,6 +9,9 @@ export default {
         'second-color': '#24293e',
         'third-color': '#8ebbff',
       },
+      fontFamily: {
+        'custom': 'Poppins, sans-serif',
+      }
     },
   },
   plugins: [],
