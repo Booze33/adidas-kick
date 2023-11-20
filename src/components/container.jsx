@@ -1,6 +1,7 @@
 //import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Nav from './nav.jsx';
+import Page from './page.jsx';
 import '../assets/styles/container.css';
 
 const containerVariants = {
@@ -30,6 +31,7 @@ const Container = () => {
     animate='visible'
     exit='exit'>
       <Nav />
+      <Page />
     </motion.nav>
   );
 }

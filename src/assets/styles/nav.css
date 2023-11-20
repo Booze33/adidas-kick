@@ -8,7 +8,7 @@
 .nav-link::after {
   position: absolute;
   content: "";
-  width: 8rem;
+  width: 6rem;
   height: 3px;
   top: 100%;
   left: 0;
