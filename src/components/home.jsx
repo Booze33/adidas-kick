@@ -136,7 +136,7 @@ const Home = () => {
           <motion.h2
             initial={{ y: 250 }}
             animate={{ y: 0 }}
-            transition={{ delay: 4, ease: "easeInOut" }}
+            transition={{ delay: 5, ease: "easeInOut", duration: 3 }}
             className="scroll-btn">
             View Page <FaArrowAltCircleDown className="scroll"/>
           </motion.h2>

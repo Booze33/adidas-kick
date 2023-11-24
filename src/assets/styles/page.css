@@ -1,6 +1,46 @@
 .welcome {
-  
-  background-color: blue;
   width: 100vw;
-  height: 100;
+  height: 100%;
+}
+
+.container-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.linear-bg {
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+}
+
+.linear-bg2 {
+  position: absolute;
+  left: 20%;
+  z-index: -1;
+}
+
+.linear-bg3 {
+  position: absolute;
+  left: 25%;
+  z-index: -1;
+}
+
+.intro-collection {
+  background-color: transparent;
+  height: 100vh;
+}
+
+.welcome-img {
+  height: 35rem;
+  width: 45rem;
+}
+
+.head-cont {
+  position: absolute;
+  background-color: transparent;
+  width: 50vw;
+  height: 85vh;
+  padding: 7rem 5vw;
 }
