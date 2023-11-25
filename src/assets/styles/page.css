@@ -35,6 +35,7 @@
 .welcome-img {
   height: 35rem;
   width: 45rem;
+  z-index: 0;
 }
 
 .head-cont {

@@ -50,6 +50,7 @@ const Page = () => {
           <Link to="/x" className="text-white px-2 py-1 mt-16 rounded-2xl bg-gradient-to-r from-blue-700 to-black-500 border-2 border-solid border-cyan-600 text-xl">SHOP NOW</Link>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
