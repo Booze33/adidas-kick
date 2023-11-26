@@ -1,5 +1,7 @@
-// Import image from '../assets/images/adidas-1.jpg';
-// Import image2 from '../assets/images/adidas 2023 heatspawn pack boots (2).jpg';
+import image from '../assets/images/messi.png';
+import image2 from '../assets/images/salah.png';
+import image4 from '../assets/images/dybala.png';
+import image5 from '../assets/images/pogba.png';
 import { Link } from 'react-router-dom';
 import image3 from '../assets/images/triple.png';
 import '../assets/styles/page.css';
@@ -50,7 +52,15 @@ const Page = () => {
           <Link to="/x" className="text-white px-2 py-1 mt-16 rounded-2xl bg-gradient-to-r from-blue-700 to-black-500 border-2 border-solid border-cyan-600 text-xl">SHOP NOW</Link>
         </div>
       </div>
-      <div></div>
+      <div>
+        <h2>Stars Who Partners with Adidas</h2>
+        <div>
+          <img src={image} alt="Description" className="w-70 h-70 rotate-45" />
+          <img src={image2} alt="Description" className="w-70 h-70 rotate-45" />
+          <img src={image4} alt="Description" className="w-70 h-70 rotate-45" />
+          <img src={image5} alt="Description" className="w-70 h-70 rotate-45" />
+        </div>
+      </div>
     </div>
   );
 }

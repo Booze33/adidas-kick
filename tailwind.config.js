@@ -13,6 +13,12 @@ export default {
       fontFamily: {
         'custom': 'Poppins, sans-serif',
         'custom2': 'Marhey, sans-serif',
+      },
+      width: {
+        70: '25rem'
+      },
+      height: {
+        70: '12rem'
       }
     },
   },
