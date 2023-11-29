@@ -52,15 +52,32 @@ const Page = () => {
           <Link to="/x" className="text-white px-2 py-1 mt-16 rounded-2xl bg-gradient-to-r from-blue-700 to-black-500 border-2 border-solid border-cyan-600 text-xl">SHOP NOW</Link>
         </div>
       </div>
-      <div>
-        <h2>Stars Who Partners with Adidas</h2>
-        <div>
-          <img src={image} alt="Description" className="w-70 h-70 rotate-45" />
-          <img src={image2} alt="Description" className="w-70 h-70 rotate-45" />
+      <section className="ml-4 w-50 h-40 flex flex-col">
+        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-X</Link>
+        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-Predator</Link>
+        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-Copa</Link>
+      </section>
+      <section className="mt-16">
+        <div className="flex">
+          <div className='ml-12'>
+            <div className="rounded-full bg-fifth-color w-1 h-1"/>
+            <img src={image} alt="Description" className="w-80 h-70 mt-70 ml-60 rotate-45" />
+          </div>
+
+          <div className='ml-50'>
+            <div className="rounded-full bg-third-color w-1 h-1"/>
+            <img src={image2} alt="Description" className="w-70 h-71 mt-70 ml-50" />
+          </div>
+
+          <div className='ml-12'>
+            <div className="rounded-full bg-fifth-color w-1 h-1"/>
+            <img src={image4} alt="Description" className="w-70 h-71 mt-70 ml-60" />
+          </div>
+          {/* <img src={image2} alt="Description" className="w-70 h-70 rotate-45" />
           <img src={image4} alt="Description" className="w-70 h-70 rotate-45" />
-          <img src={image5} alt="Description" className="w-70 h-70 rotate-45" />
+          <img src={image5} alt="Description" className="w-70 h-70 rotate-45" /> */}
         </div>
-      </div>
+      </section>
     </div>
   );
 }
