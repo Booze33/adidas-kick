@@ -1,9 +1,10 @@
 import image from '../assets/images/messi.png';
 import image2 from '../assets/images/salah.png';
+import image3 from '../assets/images/triple.png';
 import image4 from '../assets/images/dybala.png';
 import image5 from '../assets/images/pogba.png';
+import image6 from '../assets/images/benzema.png';
 import { Link } from 'react-router-dom';
-import image3 from '../assets/images/triple.png';
 import '../assets/styles/page.css';
 
 const Page = () => {
@@ -61,21 +62,31 @@ const Page = () => {
         <div className="flex">
           <div className='ml-12'>
             <div className="rounded-full bg-fifth-color w-1 h-1"/>
-            <img src={image} alt="Description" className="w-80 h-70 mt-70 ml-60 rotate-45" />
+            {/* <div className="rounded-full bg-gradient-to-t from-blue-700 to-transparent-900 w-1 z-20 h-1"/> */}
+            <img src={image} alt="Description" className="w-80 h-70 mt-70 ml-60 rotate-45 z-0" />
           </div>
 
           <div className='ml-50'>
             <div className="rounded-full bg-third-color w-1 h-1"/>
-            <img src={image2} alt="Description" className="w-70 h-71 mt-70 ml-50" />
+            <img src={image2} alt="Description" className="w-70 h-71 mt-72 ml-50" />
           </div>
 
           <div className='ml-12'>
             <div className="rounded-full bg-fifth-color w-1 h-1"/>
-            <img src={image4} alt="Description" className="w-70 h-71 mt-70 ml-60" />
+            <img src={image4} alt="Description" className="w-70 h-72 mt-75 ml-80" />
           </div>
-          {/* <img src={image2} alt="Description" className="w-70 h-70 rotate-45" />
-          <img src={image4} alt="Description" className="w-70 h-70 rotate-45" />
-          <img src={image5} alt="Description" className="w-70 h-70 rotate-45" /> */}
+        </div>
+
+        <div className="flex w-40 h-1 ml-40">
+          <div className='ml-12'>
+            <div className="rounded-full bg-third-color w-1 h-1"/>
+            <img src={image5} alt="Description" className="w-90 h-1 mt-75" />
+          </div>
+
+          <div className='ml-12'>
+            <div className="rounded-full bg-third-color w-1 h-1"/>
+            <img src={image6} alt="Description" className="w-90 h-2 mt-75" />
+          </div>
         </div>
       </section>
     </div>
