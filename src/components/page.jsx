@@ -53,20 +53,15 @@ const Page = () => {
           <Link to="/x" className="text-white px-2 py-1 mt-16 rounded-2xl bg-gradient-to-r from-blue-700 to-black-500 border-2 border-solid border-cyan-600 text-xl">SHOP NOW</Link>
         </div>
       </div>
-      <section className="ml-4 w-50 h-40 flex flex-col">
-        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-X</Link>
-        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-Predator</Link>
-        <Link className="bg-custom-color font-custom2 text-sky-400 text-3xl my-4">Adidas-Copa</Link>
-      </section>
-      <section className="mt-16">
-        <div className="flex">
+
+      <section className="mt-16 w-screen h-69">
+        <div className="flex w-2 ml-30 h-69 justify-center">
           <div className='ml-12'>
             <div className="rounded-full bg-fifth-color w-1 h-1"/>
-            {/* <div className="rounded-full bg-gradient-to-t from-blue-700 to-transparent-900 w-1 z-20 h-1"/> */}
-            <img src={image} alt="Description" className="w-80 h-70 mt-70 ml-60 rotate-45 z-0" />
+            <img src={image} alt="Description" className="w-80 h-2 mt-70 ml-61" />
           </div>
 
-          <div className='ml-50'>
+          {/* <div className='ml-50'>
             <div className="rounded-full bg-third-color w-1 h-1"/>
             <img src={image2} alt="Description" className="w-70 h-71 mt-72 ml-50" />
           </div>
@@ -74,10 +69,10 @@ const Page = () => {
           <div className='ml-12'>
             <div className="rounded-full bg-fifth-color w-1 h-1"/>
             <img src={image4} alt="Description" className="w-70 h-72 mt-75 ml-80" />
-          </div>
+          </div> */}
         </div>
 
-        <div className="flex w-40 h-1 ml-40">
+        {/* <div className="flex w-40 h-1 ml-40">
           <div className='ml-12'>
             <div className="rounded-full bg-third-color w-1 h-1"/>
             <img src={image5} alt="Description" className="w-90 h-1 mt-75" />
@@ -87,7 +82,7 @@ const Page = () => {
             <div className="rounded-full bg-third-color w-1 h-1"/>
             <img src={image6} alt="Description" className="w-90 h-2 mt-75" />
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
