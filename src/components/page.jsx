@@ -58,7 +58,8 @@ const Page = () => {
         <div className="flex w-2 ml-30 h-69 justify-center">
           <div className='ml-12'>
             <div className="rounded-full bg-fifth-color w-1 h-1"/>
-            <img src={image} alt="Description" className="w-80 h-2 mt-70 ml-61" />
+            <img src={image} alt="Description" className="w-80 h-3 mt-70 ml-61" />
+            <h2 className="font-custom2 text-sky-400 text-3xl ml-10">X-CrazyFast MESSI</h2>
           </div>
 
           {/* <div className='ml-50'>
