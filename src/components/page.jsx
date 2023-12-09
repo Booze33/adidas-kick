@@ -1,4 +1,4 @@
-//import image from '../assets/images/messi.png';
+import image from '../assets/images/messi.png';
 //import image2 from '../assets/images/salah.png';
 import image3 from '../assets/images/triple.png';
 // import image4 from '../assets/images/dybala.png';
@@ -60,13 +60,13 @@ const Page = () => {
           <input type="radio" className="radio" name="slider" id="s2" />
           <input type="radio" className="radio" name="slider" id="s3" />
           <input type="radio" className="radio" name="slider" id="s4" />
-          <input type="radio" className="radio" name="slider" id="s5" />
+          <input type="radio" className="radio" name="slider" id="s5" placeholder="Benzema" />
       
           <label htmlFor="s1" id="slider1">
             <div className='ml-12 img'>
-              {/* <div className="rounded-full bg-fifth-color w-1 h-1"/>
+              <div className="rounded-full bg-fifth-color w-1 h-1"/>
               <img src={image} alt="Description" className="w-80 h-3 mt-70 ml-61" />
-              <h2 className="font-custom2 text-sky-400 text-3xl ml-10">X-CrazyFast MESSI</h2> */}
+              <h2 className="font-custom2 text-sky-400 text-3xl ml-10">X-CrazyFast MESSI</h2>
             </div>
           </label>
 
