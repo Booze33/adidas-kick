@@ -1,13 +1,23 @@
-import image from '../assets/images/messi.png';
 //import image2 from '../assets/images/salah.png';
-import image3 from '../assets/images/triple.png';
 // import image4 from '../assets/images/dybala.png';
 // import image5 from '../assets/images/pogba.png';
 // import image6 from '../assets/images/benzema.png';
-import { Link } from 'react-router-dom';
+import Link from 'react-router-dom';
+import { useState } from 'react';
+// import { AnimatePresence } from 'framer-motion';
+// import Messi from './players/messi';
+// import Benzima from './players/benzima';
+import image3 from '../assets/images/triple.png';
 import '../assets/styles/page.css';
 
 const Page = () => {
+  const [currentDiv, setCurrentDiv] = useState(1);
+
+  const handleNavigation = (newDiv) => {
+    setCurrentDiv(newDiv);
+  };
+
+
   return (
     <div className="welcome mt-16">
       <div className="container-bg">
@@ -54,51 +64,20 @@ const Page = () => {
         </div>
       </div>
 
-      <section className="mt-16 w-screen h-69">
-        <div id="slider">
-          <input type="radio" className="radio" name="slider" id="s1" checked />
-          <input type="radio" className="radio" name="slider" id="s2" />
-          <input type="radio" className="radio" name="slider" id="s3" />
-          <input type="radio" className="radio" name="slider" id="s4" />
-          <input type="radio" className="radio" name="slider" id="s5" placeholder="Benzema" />
-      
-          <label htmlFor="s1" id="slider1">
-            <div className='ml-12 img'>
-              <div className="rounded-full bg-fifth-color w-1 h-1"/>
-              <img src={image} alt="Description" className="w-80 h-3 mt-70 ml-61" />
-              <h2 className="font-custom2 text-sky-400 text-3xl ml-10">X-CrazyFast MESSI</h2>
-            </div>
-          </label>
-
-          <label htmlFor="s2" id="slider2">
-            <div className='ml-50 img'>
-              {/* <div className="rounded-full bg-third-color w-1 h-1"/>
-              <img src={image2} alt="Description" className="w-70 h-71 mt-72 ml-50" /> */}
-            </div>
-          </label>
-
-          <label htmlFor="s3" id="slider3">
-            <div className='ml-12 img'>
-              {/* <div className="rounded-full bg-fifth-color w-1 h-1"/>
-              <img src={image4} alt="Description" className="w-70 h-72 mt-75 ml-80" /> */}
-            </div>
-          </label>
-
-          <label htmlFor="s4" id="slider4">
-            <div className='ml-12 img'>
-              {/* <div className="rounded-full bg-third-color w-1 h-1"/>
-              <img src={image5} alt="Description" className="w-90 h-1 mt-75" /> */}
-            </div>
-          </label>
-            
-          <label htmlFor="s5" id="slider5">
-            <div className='ml-12 img'>
-              {/* <div className="rounded-full bg-third-color w-1 h-1"/>
-              <img src={image6} alt="Description" className="w-90 h-2 mt-75" /> */}
-            </div>
-          </label>
-        
+      <section>
+        <div>
+          <button onClick={() => handleNavigation(1)}>Div 1</button>
+          <button onClick={() => handleNavigation(2)}>Div 2</button>
+          <button onClick={() => handleNavigation(3)}>Div 3</button>
+          <button onClick={() => handleNavigation(4)}>Div 4</button>
+          <button onClick={() => handleNavigation(5)}>Div 5</button>
         </div>
+
+        <div style={{ display: currentDiv === 1 ? 'block' : 'none' }}>Content for Div 1</div>
+        <div style={{ display: currentDiv === 2 ? 'block' : 'none' }}>Content for Div 2</div>
+        <div style={{ display: currentDiv === 3 ? 'block' : 'none' }}>Content for Div 3</div>
+        <div style={{ display: currentDiv === 4 ? 'block' : 'none' }}>Content for Div 4</div>
+        <div style={{ display: currentDiv === 5 ? 'block' : 'none' }}>Content for Div 5</div>
       </section>
     </div>
   );
