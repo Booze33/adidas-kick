@@ -45,3 +45,37 @@
   height: 85vh;
   padding: 7rem 5vw;
 }
+
+.player-nav {
+  transition: all 0.5s;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.player-nav::after {
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 3px;
+  top: 100%;
+  left: 27%;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: #fff;
+}
+
+.player-nav:hover {
+    color: #8ebbff;
+    transform: scale(1.35);
+}
+
+.player-nav:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.player-nav.active {
+  transform: scale(1.30);
+}

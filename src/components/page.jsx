@@ -2,7 +2,7 @@
 // import image4 from '../assets/images/dybala.png';
 // import image5 from '../assets/images/pogba.png';
 // import image6 from '../assets/images/benzema.png';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 // import { AnimatePresence } from 'framer-motion';
 // import Messi from './players/messi';
@@ -64,13 +64,13 @@ const Page = () => {
         </div>
       </div>
 
-      <section>
-        <div>
-          <button onClick={() => handleNavigation(1)}>Div 1</button>
-          <button onClick={() => handleNavigation(2)}>Div 2</button>
-          <button onClick={() => handleNavigation(3)}>Div 3</button>
-          <button onClick={() => handleNavigation(4)}>Div 4</button>
-          <button onClick={() => handleNavigation(5)}>Div 5</button>
+      <section className="w-screen h-69 bg-fifth-color flex">
+        <div className="flex flex-col h-69 w-4 pt-10">
+          <button className={`text-white text-xl mb-5 player-nav ${currentDiv === 1 ? 'active' : ''}`} onClick={() => handleNavigation(1)}>MESSI</button>
+          <button className={`text-white text-xl mb-5 player-nav ${currentDiv === 2 ? 'active' : ''}`} onClick={() => handleNavigation(2)}>POGBA</button>
+          <button className={`text-white text-xl mb-5 player-nav ${currentDiv === 3 ? 'active' : ''}`} onClick={() => handleNavigation(3)}>BENZIMA</button>
+          <button className={`text-white text-xl mb-5 player-nav ${currentDiv === 4 ? 'active' : ''}`} onClick={() => handleNavigation(4)}>DYBALA</button>
+          <button className={`text-white text-xl mb-5 player-nav ${currentDiv === 5 ? 'active' : ''}`} onClick={() => handleNavigation(5)}>SALAH</button>
         </div>
 
         <div style={{ display: currentDiv === 1 ? 'block' : 'none' }}>Content for Div 1</div>

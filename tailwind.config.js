@@ -16,10 +16,14 @@ export default {
         'custom': 'Poppins, sans-serif',
         'custom2': 'Marhey, sans-serif',
       },
+      fontSize: {
+        'custom': '2rem',
+      },
       width: {
         1: '40vw',
         2: '75vw',
         3: '35vw',
+        4: '15vw',
         90: '38rem',
         80: '40rem',
         70: '30rem',
@@ -36,7 +40,11 @@ export default {
         70: '16rem',
         69: '85vh',
       },
+      padding: {
+        10: '8rem',
+      },
       margin: {
+        5: '1rem',
         10: '6rem',
         20: '55vw',
         30: '13vw',
