@@ -78,4 +78,5 @@
 
 .player-nav.active {
   transform: scale(1.30);
+  color: #8ebbff;
 }
