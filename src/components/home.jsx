@@ -86,6 +86,20 @@ const containerVariants = {
   }
 }
 
+const linkVariants = {
+  hidden: { y: -50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 3.5,
+      type: 'spring',
+      stiffness: 300,
+      damping: 12,
+    },
+  },
+};
+
 const Home = () => {
   return (
     <motion.div
@@ -130,16 +144,15 @@ const Home = () => {
         className="adidas-logo">
           adidas
       </motion.h1>
-      <Link
-        to="/container"
-        className="scroll-link">
-          <motion.h2
-            initial={{ y: 250 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 5, ease: "easeInOut", duration: 3 }}
-            className="scroll-btn">
-            View Page <FaArrowAltCircleDown className="scroll"/>
-          </motion.h2>
+      <Link to="/adidas" className="scroll-link">
+        <motion.h2
+          variants={linkVariants}
+          initial="hidden"
+          animate="visible"
+          className="scroll-btn"
+        >
+          View Page <FaArrowAltCircleDown className="scroll" />
+        </motion.h2>
       </Link>
     </motion.div>
   );

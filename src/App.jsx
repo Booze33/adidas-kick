@@ -11,7 +11,7 @@ function App() {
       <AnimatePresence>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
-          <Route path="/container" element={<Container />} />
+          <Route path="/adidas" element={<Container />} />
         </Routes>
       </AnimatePresence>
     </div>
