@@ -1,4 +1,4 @@
-# Adidas Kick
+# Adidas Kick: Desktop Version
 <a name="readme-top"></a>
 
 
@@ -71,9 +71,9 @@
 
 
 
-- **Install stylelint for CSS**
-- **Install Webhint**
-- **Design your page**
+- **Create react app using vite**
+- **Install Tailwind CSS**
+- **Intall Framer Motion**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +83,7 @@
 
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://adidas-kick.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
