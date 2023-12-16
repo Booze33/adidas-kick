@@ -1,0 +1,29 @@
+.nav-link {
+  transition: all 0.5s;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: #fff;
+}
+
+.nav-link:hover {
+    color: #8ebbff;
+    transform: scale(1.25);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
