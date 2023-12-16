@@ -82,7 +82,7 @@ const Page = () => {
         </svg>
       </div>
 
-      <div className="intro-collection w-screen">
+      <section id="Home" className="intro-collection w-screen">
         <div className="w-1/2 left-1/2 absolute">
           <img src={image3} alt="Description" className="welcome-img" />
         </div>
@@ -92,7 +92,7 @@ const Page = () => {
           <p className="text-white py-6 text-xl">Elevate Your Game with Our Exclusive Adidas Football Boots Collection, Inspired by Soccer Legends Messi, Salah, Pogba, and Dybala. Join the Winning Team Now and Dominate the Pitch in Style!</p>
           <Link to="/x" className="text-white px-2 py-1 mt-16 rounded-2xl bg-gradient-to-r from-blue-700 to-black-500 border-2 border-solid border-cyan-600 text-xl">SHOP NOW</Link>
         </div>
-      </div>
+      </section>
 
       <div className="h-8 w-50 bg-fifth-color mb-3 ml-3" />
 
@@ -158,7 +158,7 @@ const Page = () => {
       </section>
 
 
-      <section className="w-screen h-68 flex justify-around py-16">
+      <section id="About" className="w-screen h-68 flex justify-around py-16">
         <div className="bg-custom-color w-6 h-7 mt-4 rounded-2xl p-6">
           <h1 className="font-custom2 text-slate-400 text-3xl ml-4 mb-3">Our Values</h1>
           <div className="h-8 w-7 bg-third-color mb-3" />

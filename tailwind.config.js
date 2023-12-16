@@ -60,6 +60,7 @@ export default {
         10: '8rem',
       },
       margin: {
+        2: '2rem',
         3: '1rem',
         4: '3rem',
         5: '1rem',
@@ -75,6 +76,7 @@ export default {
         62: '-10rem',
         63: '-32rem',
         64: '-30rem',
+        65: '-15rem',
         70: '-27rem',
         71: '-25rem',
         72: '-18rem',
